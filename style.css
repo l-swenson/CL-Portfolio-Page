@@ -56,6 +56,15 @@ nav a {
     align-items: center;
 }
 
+/* article {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: stretch;
+
+} */
+
 .hero-text {
     text-align: center;
     color: white;
@@ -63,32 +72,45 @@ nav a {
 
 .about-me-container {
     background-color: #d0d0cd;
-    height: 40%;
-}
-
-.about-me-main {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    height: 30%;
     padding: 30px;
 }
 
-.about-me-EDCL {
-    display: flex;
-    height: 30%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+.about-me-content {
+ 
 }
 
+.about-me-experience {
+    display: flex;
+    height: 30%;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.education, .code-louisville {
+    width: 40%;
+    height: 100px;
+    background: gray;
+    margin: 20px;
+}
 
 .my-work-container {
     background-color: #e3ddd4;
     height: 30%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.work-experience-OCM, .work-experience-PortP {
+    width: 40%;
+    height: 100px;
+    background: gray;
+    margin: 20px;
 }
 
 .contact-container {
@@ -101,6 +123,10 @@ nav a {
     #message {
         display: none;
     }
+
+    .education, .code-louisville {
+        width: 30%;
+    }
 }
 
 
@@ -108,6 +134,7 @@ nav a {
     #Lukas {
         display: none;
     }
+
 }
 
 /* Medium Screen Width */
