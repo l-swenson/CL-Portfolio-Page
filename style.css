@@ -22,8 +22,6 @@ p {
   justify-content: space-between;
 }
 
-/*  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
-
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(neil-mark-thomas-dGyshquBzOc-unsplash.jpg);
     height: 50%;
@@ -40,18 +38,34 @@ p {
     color: white;
 }
 
-.about-me {
+.about-me-container {
     background-color: #d0d0cd;
-    height: 30%;
+    height: 50%;
+}
+
+.about-me-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.about-me-EDCL {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
-
-.my-work {
+.my-work-container {
     background-color: #e3ddd4;
+    height: 50%;
     display: flex;
-
-    
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .contact-container {
@@ -61,5 +75,17 @@ p {
 
 @media only screen and (min-width: 768px) {
 
+}
+
+@media only screen and (max-width: 320px) {
+    #message {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:320px) {
+    #Lukas {
+        display: none;
+    }
 }
 
