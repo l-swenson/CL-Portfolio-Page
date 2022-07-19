@@ -25,12 +25,12 @@
 //     console.log(i);
 // }
 
-let i = 4
-while (i > 0) {
-    console.log(i);
-    i--;
-}
+// let i = 4
+// while (i > 0) {
+//     console.log(i);
+//     i--;
+// }
 
-function showMessage(message) {
-    document.getElementById('message').textContent = message;
-}
+// function showMessage(message) {
+//     document.getElementById('message').textContent = message;
+// }
