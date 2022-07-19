@@ -31,3 +31,6 @@ while (i > 0) {
     i--;
 }
 
+function showMessage(message) {
+    document.getElementById('message').textContent = message;
+}
