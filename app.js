@@ -34,3 +34,15 @@
 // function showMessage(message) {
 //     document.getElementById('message').textContent = message;
 // }
+
+// List items are hidden 
+
+// Hamburger menu opens upon click 
+
+// hamburger menu closes after a selection is made 
+
+
+
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
