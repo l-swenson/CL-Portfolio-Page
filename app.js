@@ -35,14 +35,35 @@
 //     document.getElementById('message').textContent = message;
 // }
 
-// List items are hidden 
 
-// Hamburger menu opens upon click 
+// function toggleMenu() {
+//   document.getElementById("mainNavJs").classList.toggle("hide");
+// }
 
-// hamburger menu closes after a selection is made 
+// let x =document.getElementById('hamburgerMenu');
+// x.onclick = toggleMenu;
 
+// function myFunction(x) {
+//   x.classList.toggle("change");
+// }
 
+// On mobile, hamburger menu appears
+// Nav needs to disappear 
+// On Click, hamnurger menu expands to show nav 
+// If menu is open, click x to close page
 
-function myFunction(x) {
-    x.classList.toggle("change");
+document.querySelector('#hamburgerMenu').addEventListener('click', () => {
+    const menu = document.querySelector('#headerNav');
+    var menuIsOpen = menu.style.display === 'flex';
+  if (menuIsOpen) {
+    document.querySelector('#hamburgerMenu').classList.remove('change');
+    menu.style.display = 'none';
+  } 
+
+  else  {
+    document.querySelector('#hamburgerMenu').classList.add('change');
+    menu.style.display = 'flex';
   }
+
+
+});

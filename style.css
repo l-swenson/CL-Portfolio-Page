@@ -17,22 +17,45 @@ p {
     margin: 0.5em 0 0.5em 0;
 }
 
-.header {
-    padding-top: .5em;
-    border: 1px solid #a2a2a2;
+header {
     background-color: #eae9e6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
 header h1 {
     font-size: 2.5em;
-    padding: 10px;
+    padding: 1rem;
+    width: 80%;
 }
 
 .main-nav {
-    /* margin-top: 5px; */
     background-color: lightslategray;
-    /* padding: 0 15px; */
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .hide {
+    display: none;
+} */
+
+nav {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+    width: 100%;
+}
+
+.hide {
+    display: none;
 }
 
 nav a {
@@ -49,6 +72,7 @@ nav a {
 .Hamburger-Menu {
     display: inline-block;
     cursor: pointer;
+    padding-right: 1rem;
   }
   
 .bar1, .bar2, .bar3 {
@@ -56,7 +80,7 @@ nav a {
     height: 5px;
     background-color: #333;
     margin: 6px 0;
-    transition: 0.4s;
+    transition: 0.4s ease;
 }
 .change .bar1 {
     transform: rotate(-45deg) translate(-8px, 8px) ;
@@ -70,10 +94,9 @@ nav a {
     transform: rotate(45deg) translate(-7.5px, -8px) ;
 }
 
-
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(neil-mark-thomas-dGyshquBzOc-unsplash.jpg);
-    height: 50%;
+    height: 40%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -139,48 +162,43 @@ nav a {
 }
 
 /* Small Screen Width */
-@media only screen and (max-width: 320px) {
-   
-}
-
 
 @media only screen and (min-width: 320px) {
     .Hamburger-Menu {
         display: none;
     }
-}
 
-
-@media only screen and (max-width:768px) {
-    .main-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    }
-
+    /* header,
+	.main-nav {
+		display: flex;
+        flex-direction: row;
+		align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+	} */
 }
 
 /* Medium Screen Width */
 @media only screen and (min-width: 768px) {
 
-    .header,
+    header,
 	.main-nav {
 		display: flex;
+        flex-direction: row;
+		align-items: center;
+        justify-content: space-between;
 	}
 
-    .header {
-		flex-direction: column;
-		align-items: center;
-	}
 
 }
 
 /* Large Screen Width */
 @media only screen and (min-width: 1024px) {
-    .header {
+    header {
 		flex-direction: row;
+        display: flex;
+        flex-direction: row;
+		align-items: center;
 		justify-content: space-between;
 	}
 
