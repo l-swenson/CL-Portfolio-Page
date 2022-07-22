@@ -64,39 +64,65 @@ document.querySelector('#hamburgerMenu').addEventListener('click', () => {
     document.querySelector('#hamburgerMenu').classList.add('change');
     menu.style.display = 'flex';
   }
-
-
 });
 
-var fields = {};
-document.addEventListener("DOMContentLoaded", function() {
-  fields.fullName = document.getElementById('fullName');
-  fields.email = document.getElementById('email');
-  fields.textArea = document.getElementById('textArea');
-})
 
-function isNotEmpty(value) {
-  if (value == null || typeof value == 'undefined') return false;
 
-  return (value.length > 0);
+document.getElementById('btn').addEventListener("click", ValidateEmail);
+
+function ValidateEmail(){
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(email.value.match(mailformat))
+{
+// alert("Valid email address!");
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+// document.email.focus();
+return false;
 }
 
-function isValid() {
-  var valid = true;
-  valid &= fieldValidation(fields.fullName, isNotEmpty);
-  valid &= fieldValidation(fields.email, isNotEmpty);
-  return valid;
- }
 
-function sendContact() {
-  if (isValid()) {
-    let usr = new User(fullName.value, email, textArea);
+};
 
-    alert ('${usr.fullName} thanks for registering.')
-  }
+if (ValidateEmail() === true) {
 
-  else {
-    window.alert('There was an error!')
-  }
+function displayName() {
+  let name = fullName.value
+  alert ("Thank you " + name + " for registering! This form is for demonstration purposes only.")
+};
 
-}
+};
+
+
+
+
+// // function isValid() {
+// //   var valid = true;
+// //   valid &= fieldValidation(fields.fullName, isNotEmpty);
+// //   valid &= fieldValidation(fields.email, isNotEmpty);
+// //   return valid;
+// //  }
+
+// function sendContact() {
+//   if (isNotEmpty()) {
+//     let usr = fullName.value;
+
+//     alert (usr + "thanks for registering.")
+//     console.log(fullName.value)
+//   }
+
+
+//   else {
+//     window.alert('There was an error!')
+//   }
+
+// }
+
+
+
+
+
+

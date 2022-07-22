@@ -88,18 +88,20 @@
 
             <h2>Let's Talk!</h2>
         
-            <label><p>Your Name</p></label>
-            <input type="text" id="fullName" placeholder="Enter Your Name...">
+            <label for="fullName"><p>Your Name</p></label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter Your Name...">
         
         
-            <label><p>Email</p></label>
-            <input type="email" id="email" placeholder="Enter Your Email...">
+            <label for="email"><p>Email</p></label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email...">
         
         
-            <label><p>Your Message</p></label>
+            <label for="message"><p>Your Message</p></label>
             <textarea name="Message" id="textArea" cols="30" rows="5" placeholder="Enter Message..."></textarea>
     
-            <button onclick="sendContact();" class="btn">Send Message</button>
+            <button type="Submit" class="btn" id="btn">Send Message</button>
+            
+            <!-- <input type="Submit" value="Submit" class="btn" /> -->
             <!-- <p><a href="#" class="btn">Send Message</a></p> -->
         </div>
 

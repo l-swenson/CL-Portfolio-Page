@@ -198,15 +198,25 @@ label {
 	margin-left: 12px;
 }
 
+input, textarea {
+    width: 100%;
+    border: solid 1px #999;
+    border-radius: 3px;
+    padding: 10px;
+}
+
 .btn {
     background-color: lightslategray;
-    border: none;
+    width: 100%;
+    border: solid 1px #999;
+    border-radius: 3px;
     color: white;
+    margin: .3rem .3rem .3rem 0rem;
     padding: 10px 25px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -216,9 +226,7 @@ label {
 input:hover textarea:hover {
     background: #A5D6A7;
 }
-input[type=text]:focus,input[type=email]:focus, textarea:focus {
-	border: 1px solid green;
-}
+
 
 /* Small Screen Width */
 
@@ -254,6 +262,11 @@ input[type=text]:focus,input[type=email]:focus, textarea:focus {
 
     header h1 {
         width: 50%;
+    }
+
+
+    .contact-content {
+        width: 350px;
     }
     
 
