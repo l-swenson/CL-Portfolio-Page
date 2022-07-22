@@ -67,3 +67,36 @@ document.querySelector('#hamburgerMenu').addEventListener('click', () => {
 
 
 });
+
+var fields = {};
+document.addEventListener("DOMContentLoaded", function() {
+  fields.fullName = document.getElementById('fullName');
+  fields.email = document.getElementById('email');
+  fields.textArea = document.getElementById('textArea');
+})
+
+function isNotEmpty(value) {
+  if (value == null || typeof value == 'undefined') return false;
+
+  return (value.length > 0);
+}
+
+function isValid() {
+  var valid = true;
+  valid &= fieldValidation(fields.fullName, isNotEmpty);
+  valid &= fieldValidation(fields.email, isNotEmpty);
+  return valid;
+ }
+
+function sendContact() {
+  if (isValid()) {
+    let usr = new User(fullName.value, email, textArea);
+
+    alert ('${usr.fullName} thanks for registering.')
+  }
+
+  else {
+    window.alert('There was an error!')
+  }
+
+}

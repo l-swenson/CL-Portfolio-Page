@@ -66,6 +66,7 @@
         </section>
 
         <section class="my-work-container">
+            <h2>Work Expierence</h2>
 
             <article class="work-experience-OCM">
                 <h3>Online Conent Management</h3>
@@ -88,17 +89,18 @@
             <h2>Let's Talk!</h2>
         
             <label><p>Your Name</p></label>
-            <input type="text" placeholder="Enter Your Name...">
+            <input type="text" id="fullName" placeholder="Enter Your Name...">
         
         
             <label><p>Email</p></label>
-            <input type="email" placeholder="Enter Your Email...">
+            <input type="email" id="email" placeholder="Enter Your Email...">
         
         
             <label><p>Your Message</p></label>
-            <textarea name="Message" id="text_area" cols="30" rows="5" placeholder="Enter Message..."></textarea>
+            <textarea name="Message" id="textArea" cols="30" rows="5" placeholder="Enter Message..."></textarea>
     
-            <p><a href="#" class="btn">Send Message</a></p>
+            <button onclick="sendContact();" class="btn">Send Message</button>
+            <!-- <p><a href="#" class="btn">Send Message</a></p> -->
         </div>
 
     </section>
