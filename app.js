@@ -26,7 +26,7 @@ submitButton.addEventListener("click", function(){
 
   if(email.value.match(mailFormat)){
     let name = fullName.value
-    alert ("Thank you " + name + " for registering! This form is for demonstration purposes only.")
+    alert ("Thank you " + name + " for your message!")
   }
 
   else {
