@@ -17,14 +17,14 @@ document.querySelector('#hamburgerMenu').addEventListener('click', () => {
 
 });
 
-
-
 document.querySelector('.main-nav a').addEventListener('click', () => {
   const menu = document.querySelector('#headerNav');
 
   document.querySelector('#hamburgerMenu').classList.remove('change');
   menu.style.display = 'none';
+  // console.log('yes')
 });
+
 
 
 // Email verification and contact form greeting
