@@ -17,12 +17,27 @@ document.querySelector('#hamburgerMenu').addEventListener('click', () => {
 
 });
 
+
+
+document.querySelector('.main-nav a').addEventListener('click', () => {
+  const menu = document.querySelector('#headerNav');
+
+  document.querySelector('#hamburgerMenu').classList.remove('change');
+  menu.style.display = 'none';
+});
+
+
 // Email verification and contact form greeting
 var submitButton = document.getElementById('btn');
 
 submitButton.addEventListener("click", function(){
 
   var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+  if(document.getElementById("fullName"). value. length == 0)
+  {
+    alert("Please enter your name!")
+    }
 
   if(email.value.match(mailFormat)){
     let name = fullName.value
@@ -34,35 +49,4 @@ submitButton.addEventListener("click", function(){
   }
 
 });
-
-
-
-
-
-// // function isValid() {
-// //   var valid = true;
-// //   valid &= fieldValidation(fields.fullName, isNotEmpty);
-// //   valid &= fieldValidation(fields.email, isNotEmpty);
-// //   return valid;
-// //  }
-
-// function sendContact() {
-//   if (isNotEmpty()) {
-//     let usr = fullName.value;
-
-//     alert (usr + "thanks for registering.")
-//     console.log(fullName.value)
-//   }
-
-
-//   else {
-//     window.alert('There was an error!')
-//   }
-
-// }
-
-
-
-
-
 
