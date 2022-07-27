@@ -1,6 +1,6 @@
 # Lukas Swenson's Portolio Page (Code Louisville Final Project)
 
-This portfolio consists of a responsive single-page layout that focuses on my educational background and work experience. It's purpose is to function as capstone project for the Code Louisville program as well as the start of a professional portfolio page. The page is navigable via a menu at the top that is linked to anchor tags further down the site. The contact form at the bottom has fields for a name, email, and short message.
+This portfolio consists of a responsive single-page layout that focuses on my educational background and work experience. Its purpose is to function as capstone project for the Code Louisville program as well as the start of a professional portfolio page. The page is navigable via a menu at the top right that is linked to anchor tags throughout the three sections. The contact form at the bottom has fields for a name, email, and short message.
 
 # CSS Feature: 
 <ul>

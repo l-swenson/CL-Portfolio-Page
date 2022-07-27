@@ -1,9 +1,9 @@
-
 // Hamburger menu functionality
+
 document.querySelector('#hamburgerMenu').addEventListener('click', () => {
 
-    const menu = document.querySelector('#headerNav');
-    var menuIsOpen = menu.style.display === 'flex';
+  const menu = document.querySelector('#headerNav');
+  var menuIsOpen = menu.style.display === 'flex';
 
   if (menuIsOpen) {
     document.querySelector('#hamburgerMenu').classList.remove('change');
@@ -22,12 +22,12 @@ document.querySelector('.main-nav a').addEventListener('click', () => {
 
   document.querySelector('#hamburgerMenu').classList.remove('change');
   menu.style.display = 'none';
-  // console.log('yes')
+
 });
 
 
-
 // Email verification and contact form greeting
+
 var submitButton = document.getElementById('btn');
 
 submitButton.addEventListener("click", function(){
@@ -45,7 +45,7 @@ submitButton.addEventListener("click", function(){
   }
 
   else {
-    alert("You have entered an invalid email address!");
+    alert("Please enter a valid email address!");
   }
 
 });
