@@ -234,12 +234,6 @@ input:hover textarea:hover {
 }
 
 
-/* Small Screen Width */
-
-@media only screen and (min-width: 320px) {
-    
-}
-
 /* Medium Screen Width */
 @media only screen and (min-width: 768px) {
 
@@ -268,7 +262,7 @@ input:hover textarea:hover {
     }
 
     .about-me-content {
-        width: 800px;
+        width: 720px;
     }
 
     .education {
@@ -305,13 +299,46 @@ input:hover textarea:hover {
         width: 350px;
         justify-content: space-evenly;
         align-items: center;
+        margin-left: 30;
     }
     
 
 /* Large Screen Width */
 @media only screen and (min-width: 1024px) {
     
+    h2 {
+        font-size: 3vw;
+    }
 
+    p {
+        font-size: 1.35vw;
+    }
+    .hero-text h2 p {
+        font-size: 1.2vw;
+    }
+
+    .work-experience-OCM {
+        width: 500px;
+
+    }
+    .work-experience-PortP {
+        margin-bottom: 1.25rem;
+        width: 500px;
+    }
+
+    .education {
+        margin-top: 1.25rem;
+        width: 500px;
+    }
+    
+    .code-louisville {
+        margin-bottom: 1.25rem;
+        width: 500px;
+    }
+
+    .contact-content {
+        margin-left: 2rem;
+    }
 
 }
 
