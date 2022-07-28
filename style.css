@@ -125,10 +125,6 @@ nav a {
 .about-me-content {
     width: 100%;
     border-radius: 4px;
-    /* background: #D6D9D9;
-    padding: 10px;
-    margin-top: 1rem; */
-    
 }
 
 .about-me-experience h2 {
@@ -154,9 +150,6 @@ nav a {
     padding: 10px;
 }
 
-/* .education {
-    margin-top: 2.5rem;
-} */
 
 .code-louisville {
     margin-bottom: 2.5rem;
@@ -315,6 +308,10 @@ input:hover textarea:hover {
     }
     .hero-text h2 p {
         font-size: 1.2vw;
+    }
+
+    .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/jeremy-bishop-dR_q93lfaTw-unsplash-desktop.jpg);
     }
 
     .work-experience-OCM {
